@@ -1,16 +1,7 @@
-@media (max-width: 530px){
-    .galerie {
-        flex-direction: column;
-    }
-
-    .image {
-        flex: 1 1 100%;
-    }
-}
-
 .galerie {
     display: flex;
     flex-wrap: wrap;
+    height: auto;
 }
 
 .image {
@@ -18,6 +9,18 @@
     padding: 0.5%;
     flex: 1 1 calc(50% - 10px);
     box-sizing: border-box;
+}
+
+@media (max-width: 375px){
+    .galerie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+    }
 }
 
 .desc {
