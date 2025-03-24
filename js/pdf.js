@@ -1,4 +1,4 @@
-const pdf = document.querySelector('#id > button')
+const pdf = document.querySelector('#cv > button')
 
 pdf.addEventListener('click', () => {
     const lien = document.createElement('a')
