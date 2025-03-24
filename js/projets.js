@@ -6,5 +6,17 @@ export const projets = [{
     titre: "Gomoku",
     image: "",
     description: "Projet reproduction du jeu 'Gomoku' en Java"
+}, {
+    titre: "Gomoku",
+    image: "",
+    description: "Projet reproduction du jeu 'Gomoku' en Java"
+}, {
+    titre: "Gomoku",
+    image: "",
+    description: "Projet reproduction du jeu 'Gomoku' en Java"
+}, {
+    titre: "Gomoku",
+    image: "",
+    description: "Projet reproduction du jeu 'Gomoku' en Java"
 }
 ]

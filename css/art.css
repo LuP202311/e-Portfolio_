@@ -5,22 +5,9 @@
 }
 
 .image {
-    border: solid 1px grey;
     padding: 0.5%;
     flex: 1 1 calc(50% - 10px);
     box-sizing: border-box;
-}
-
-@media (max-width: 375px){
-    .galerie {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image {
-        width: 100%;
-    }
 }
 
 .desc {
@@ -31,4 +18,12 @@
 .image img {
     width: 100%;
     height: auto;
+}
+
+#galerie-titre {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .8em;
+    font-family: "Script MT Bold", serif;
+    text-decoration: #6699CC underline;
 }
