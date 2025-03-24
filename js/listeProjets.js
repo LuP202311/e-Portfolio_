@@ -25,9 +25,9 @@ function creerEtiquettes(elemType, etiquettes){
         li.textContent = etiquette
         li.style.listStyle = 'none'
         li.style.margin = '1%'
-        li.style.color = '#2E7194'
+        li.style.color = '#3a8eba'
         li.style.backgroundColor = 'white'
-        li.style.border = '1px #2E7194 solid'
+        li.style.border = '1px #3a8eba solid'
         li.style.borderRadius = '30px'
         li.style.padding='0.5em'
         li.style.borderRadius = '5%'
