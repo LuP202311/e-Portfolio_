@@ -5,7 +5,7 @@
 }
 
 .image {
-    padding: 0.5%;
+    padding: 3%;
     flex: 1 1 calc(50% - 10px);
     box-sizing: border-box;
 }
@@ -13,6 +13,7 @@
 .desc {
     text-align: center;
     margin-top: .5em;
+    font-family: "Ink Free", serif;
 }
 
 .image img {
@@ -23,7 +24,6 @@
 #galerie-titre {
     text-align: center;
     margin-top: .5em;
-    margin-bottom: .8em;
     font-family: "Script MT Bold", serif;
     text-decoration: #6699CC underline;
 }
