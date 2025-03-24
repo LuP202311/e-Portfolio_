@@ -2,3 +2,12 @@ footer {
     background-color: #c1d5dc;
     padding-bottom: 1em;
 }
+
+/* menu */
+
+.conteneur-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: .3em;
+}
