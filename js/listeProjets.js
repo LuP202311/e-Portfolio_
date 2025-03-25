@@ -55,6 +55,8 @@ function ajoutProjet(projet){
     elemProj.style.margin = "1em"
     elemProj.style.borderRadius = "1em"
 
+    elemProj.href = projet.lien
+
     return elemProj
 
 
