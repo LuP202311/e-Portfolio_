@@ -89,6 +89,7 @@
     margin: 1em;
     border: solid 0.1em #8cb1d2;
     border-radius: 20px;
+    padding: 0 10px;
 }
 
 .contact h4 {
@@ -96,6 +97,14 @@
     margin-top: .5em;
     text-decoration: underline #52809c;
 
+}
+
+.objets-contact p {
+    filter: blur(1em)
+}
+
+.objets-contact p:active {
+    filter: none;
 }
 
 .objets-contact img{

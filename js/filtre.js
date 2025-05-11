@@ -12,7 +12,7 @@ function filtreArt() {
     })
 
     cartes.forEach(carte => {
-        const tags = carte.querySelector("li").textContent.toLowerCase(); // Récupère le tag en minuscules
+        const tags = carte.querySelector("li").textContent.toLowerCase();
 
         if (tags.includes(selectedValue)) {
             carte.style.display = "block";
