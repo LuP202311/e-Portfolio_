@@ -100,7 +100,19 @@
 }
 
 .objets-contact p {
-    filter: blur(1em)
+    filter: blur(8px)
+}
+
+@keyframes trembler {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
 }
 
 .objets-contact img{

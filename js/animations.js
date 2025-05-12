@@ -14,7 +14,7 @@ cartes.forEach(carte => carte.addEventListener("mouseover", () => {
 
 /* Bouton */
 
-const bouton = document.querySelector(".projetPerso > button")
+/* const bouton = document.querySelector(".projetPerso > button")
 
 bouton.addEventListener("mouseover", () => {
     bouton.style.transition = "transform 0.4s ease-in-out"
@@ -23,4 +23,4 @@ bouton.addEventListener("mouseover", () => {
         bouton.style.transition = "transform 0.4s ease-in-out"
         bouton.style.transform = "scale(1)"
     })
-})
+}) */

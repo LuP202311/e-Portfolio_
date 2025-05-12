@@ -5,12 +5,15 @@ const textes = document.querySelectorAll(".objets-contact > p")
 
 copies.forEach(copie => copie.addEventListener("click", (evt) => {
     textes.forEach(texte => {
-        if(texte.style.filter.includes('blur(')) {
+        const computedFilter = window.getComputedStyle(texte).filter
 
-        } else if(texte.style.filter === 'none'){
-            evt.preventDefault()
+        if(computedFilter.includes('blur(')) {
+            copie.style.animation = 'trembler 500ms ease-out alternate';
+            console.log("animation running...")
+        }
+        else if(computedFilter === 'none'){
             const texteCopie = copie.closest(".objets-contact").querySelector("p").innerText;
-
+            evt.preventDefault()
             navigator.clipboard.writeText(texteCopie).then(() => {
                 alert("Texte copié : " + texteCopie)
             }).catch(err => {
@@ -36,5 +39,8 @@ copies.forEach(copie => copie.addEventListener("mouseover",()=>{
 textes.forEach(texte => {
     texte.addEventListener('click', function () {
         texte.style.filter = 'none'
+        const timer = setTimeout(() => {
+            texte.style.filter = 'blur(8px)'
+        }, 4000)
     })
 })
