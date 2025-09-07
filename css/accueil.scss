@@ -13,6 +13,23 @@
     margin-top: .3em;
 }
 
+.menu {
+    border: #52809c solid 2px;
+    background-color: #f0f8ff;
+    padding : 2em 0;
+    margin: 0 3em;
+    border-radius: 3em;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 13px;
+        font-family: Ink Free, serif;
+        font-weight: bold;
+        color: #0e3357;
+        text-decoration: #1D3956 underline solid;
+    }
+}
+
 /* header */
 
 #imgPortfolio {
@@ -124,11 +141,11 @@
     object-fit: contain;
     border-radius: 50%;
     border: #255f95 solid 2px;
-
 }
 
 .texte-profil {
     width: 100%;
+    height: 100%;
     margin-left: 3em;
     background-color: #b8c4d2;
     padding: 1em 2em;
@@ -145,12 +162,32 @@
     }
 }
 
+@media (max-width: 648px) {
+    .texte-profil {
+        overflow-y: auto;
+        height: 15em;
+        margin-left: 1em;
+    }
+    #pdp {
+        width: 8em;
+        height: 8em;
+    }
+}
+
 /* profil */
 
 .profil {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 990px) {
+    .profil {
+        flex-wrap: wrap;
+    }
+}
+
+/* contact */
 
 .contact {
     margin: 1em;
@@ -220,11 +257,11 @@
         width: 50%;
     }
     .contact {
-        width: 30%;
+        width: auto;
     }
 }
 
-@media (max-width: 643px){
+@media (max-width: 780px){
     .présentation {
         width: 100%;
     }
@@ -232,6 +269,8 @@
         width:auto;
     }
 }
+
+
 
 /* projet personnel */
 
@@ -254,6 +293,7 @@
 /* CV */
 
 #cv {
+    margin: 1em 0 0 0;
     display: flex;
     align-items: center;
     flex-direction: column;
